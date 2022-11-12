@@ -1,7 +1,7 @@
 import React from 'react';
 import Dice from './components/Dice';
 import ImagesArr from './components/ImagesArr';
-import Winner from './components/Winner';
+
 
 import defaultDice from "./images/Two_red_dice.png";
 import './components/diceRoll.css';
