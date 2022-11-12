@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    color:#fff;
+    font-family: 'Playfair Display', serif;
+    /* height: 115%; */
+    width: 1300px;
+    
+    
+ 
+  }
+  h1{
+    margin: 0;
+    
+    background: inherit;
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;  
+    font: 900 15vmin/15vh cookie, cursive;
+    text-align: center;
+    filter: invert(1);
+  }
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .gameBoard{
+    background-color:rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .buttons{
+    display: flex;  
+    flex-direction: column;
+    margin-bottom: 20px;
+
+  }
+  .button.rollDice{
+    background: url('../images/Two_red_dice.png');
+    background-size: cover;
+  }
+  .winningScoreDiv{
+    margin: 20px 0;
+  }
+  .winningScore{
+    font-size: 30px;
+    max-width: 75%;
+    text-align: center;
+  }
+  .gamePlay>*{
+    padding: 10px 0;
+  }
+  .gamePlay h3{
+    margin: 10px 0;  
+  }
+  .player{
+    background-color:rgba(14, 196, 241, 0.945);
+   
+  }
+  .liveGame{
+    flex-grow: 1;
+  }
+  .liveGame>div{
+    padding-top: 40px;
+    color: #FFF;
+  }
+  .dice-image{
+    width: 70%;
+  }
+  .App{
+    background: url('../images/pngtree-classy-luxury-casino-game-background-image_774371.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .box {
+   height:250px;
+   background:#FFF;
+   margin:40px 20px;
+   border-radius: 25px;
+  }
+  
+  
+  /*Buttons*/
+  .button{
+    text-align: center;
+    display: inline-block;
+    margin: 15px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px ;
+    background-color: lightblue;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: rgb(245, 119, 17);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    font-size: 40px;
+    width: 250px;
+    
+    
+  }
+  .button:active {
+  box-shadow: none;
+  position: relative;
+  top: .2em;
+  }
+  /*Buttons end*/
+  
+  
+  @media (max-width: 400px) {
+    body{
+      font-size: 20px;
+    }
+     .container{
+      flex-direction: column;
+    }
+    .buttons{
+      flex-direction: row;
+    }
+    .button{
+      font-size: 15px;
+      width: 95px;
+    }
+    .winningScore{
+      font-size: 20px;
+    }
+    .dice-image{
+      width: 70%;
+    }
+    .box{
+      height: 120px;
+    }
+   }
+  
+  
+  
+  .effect7
+  {
+      position:relative;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+  .effect7:before, .effect7:after
+  {
+    content:"";
+      position:absolute;
+      z-index:-1;
+      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      top:0;
+      bottom:0;
+      left:10px;
+      right:10px;
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+  }
+  .effect7:after
+  {
+    right:10px;
+      left:auto;
+      -webkit-transform:skew(8deg) rotate(3deg);
+         -moz-transform:skew(8deg) rotate(3deg);
+          -ms-transform:skew(8deg) rotate(3deg);
+           -o-transform:skew(8deg) rotate(3deg);
+              transform:skew(8deg) rotate(3deg);
+  }
+  .effect8
+  {
+      position:relative;
+      -webkit-box-shadow:0 1px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+              box-shadow:0 1px 30px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+  .effect8:before, .effect8:after
+  {
+    content:"";
+      position:absolute;
+      z-index:-1;
+      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+      box-shadow:0 0 20px rgba(0,0,0,0.8);
+      top:10px;
+      bottom:10px;
+      left:0;
+      right:0;
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+  }
+  .effect8:after
+  {
+    right:10px;
+      left:auto;
+      -webkit-transform:skew(8deg) rotate(3deg);
+         -moz-transform:skew(8deg) rotate(3deg);
+          -ms-transform:skew(8deg) rotate(3deg);
+           -o-transform:skew(8deg) rotate(3deg);
+              transform:skew(8deg) rotate(3deg);
+  }
